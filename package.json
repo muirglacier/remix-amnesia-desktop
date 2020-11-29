@@ -1,7 +1,7 @@
 {
   "version": "1.0.8",
-  "name": "remix-ide",
-  "description": "Remix - Ethereum IDE",
+  "name": "remix-amnesia-ide",
+  "description": "Remix Amnesia - Ethereum IDE",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -13,21 +13,21 @@
     "url": "git+https://github.com/ethereum/remix-desktop.git"
   },
   "author": {
-    "name": "Remix Team",
-    "email": "remix@ethereum.org"
+    "name": "Remix Amnedia Team",
+    "email": "remix@amnesia.de"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethereum/remix-desktop/issues"
+    "url": "https://github.com/muirglacier/remix-amnesia-desktop/issues"
   },
-  "homepage": "https://github.com/ethereum/remix-desktop#readme",
+  "homepage": "https://github.com/muirglacier/remix-amnesia-desktop/remix-desktop#readme",
   "devDependencies": {
     "electron": "6.0.9",
     "electron-builder": "^21.2.0"
   },
   "build": {
-    "productName": "Remix IDE",
-    "appId": "org.ethereum.remix-ide",
+    "productName": "Remix Amnesia IDE",
+    "appId": "org.muirglacier.remix-amnesia-ide",
     "asar": false,
     "files": [
       "main.js",
@@ -35,6 +35,7 @@
       "setFolder.js",
       "applicationMenu.js",
       "build/icon.png",
+      "remixd",
       "*.asar",
       "*.zip"
     ],
@@ -72,6 +73,17 @@
   },
   "dependencies": {
     "@philipplgh/electron-app-manager": "^0.55.0",
-    "remixd": "^0.2.3-alpha.4"
+    "@remixproject/plugin": "^0.3.3",
+    "@remixproject/plugin-api": "^0.3.3",
+    "@remixproject/plugin-utils": "^0.3.3",
+    "@remixproject/plugin-ws": "^0.3.3",
+    "axios": "^0.20.0",
+    "chokidar": "^2.1.8",
+    "commander": "^2.20.3",
+    "fs-extra": "^3.0.1",
+    "isbinaryfile": "^3.0.2",
+    "ws": "^7.3.0",
+    "electron-serve": "^1.0.0",
+    "node-static": "^0.7.11"
   }
 }

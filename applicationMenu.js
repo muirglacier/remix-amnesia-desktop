@@ -99,42 +99,7 @@ const template = [
   {
     role: 'help',
     submenu: [
-      {
-        label: 'Learn More',
-        click: async () => {
-          shell.openExternal('https://remix-ide.readthedocs.io')
-        }
-      },
-      {
-        label: 'Medium Posts',
-        click: async () => {
-          shell.openExternal('https://medium.com/remix-ide')
-        }
-      },
-      {
-        label: 'Community Discussions',
-        click: async () => {
-          shell.openExternal('https://gitter.im/ethereum/remix')
-        }
-      },
-      {
-        label: 'Remix in StackExchange.com',
-        click: async () => {
-          shell.openExternal('https://ethereum.stackexchange.com/questions/tagged/remix')
-        }
-      },
-      {
-        label: 'Check Releases',
-        click: async () => {
-          shell.openExternal('https://github.com/ethereum/remix-desktop/releases')
-        }
-      },
-      {
-        label: 'Report Bugs / Issues',
-        click: async () => {
-          shell.openExternal('https://github.com/ethereum/remix-ide/issues')
-        }
-      },
+      
       { role: 'toggledevtools' },
     ]
   }
